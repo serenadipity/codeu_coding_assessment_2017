@@ -78,7 +78,7 @@ final class MyJSONParser implements JSONParser {
   		}
   	}
   	if (temp.length > (parseIndex + 1)) {
-  		tempParseVal = parseIndex;
+  		int tempParseVal = parseIndex;
   		boolean isValidObj = false;
   		boolean isValidStr = false;
   		if (temp[parseIndex] == '{') {
@@ -107,8 +107,6 @@ final class MyJSONParser implements JSONParser {
   			}
   		}
   	}
-
-
 
     return newObj;
   }
